@@ -49,7 +49,7 @@ class HeroBar extends HTMLElement {
             }
             @media only screen and (max-width: 650px) {
               .hero {
-                  background:url(/images/heros/hero-image_4-small.jpg);
+                  background:url(./images/heros/hero-image_4-small.jpg);
                   background-size: cover;
                   background-position: center;
                   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ class HeroBar extends HTMLElement {
           
           @media only screen and (min-width: 651px) {
               .hero {
-                  background:url(/images/heros/hero-image_4-large.jpg);
+                  background:url(./images/heros/hero-image_4-large.jpg);
                   background-size: cover;
                   background-position: center;
                   background-repeat: no-repeat;
