@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+/* Default Mobile Design <500px */
+:root {
+  --primary-color: #fff45e;
+  --secondary-color:  #fff;
+  --tertiary-color: #1f1f1f;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 90%;
+  margin: 32px auto;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  font-style: italic;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+ 
+.skip-link:focus {
+   top: 0;
+}
+
+.restaurant-main-title {
+  text-align: center;
+  margin: 40px 0;
+  font-weight: lighter;
+}
+
+app-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: absolute;
+}
+
+hero-bar{
+  height: 50vh;
+}
+
+img {
+  display: block;
+}
+
+.restaurant-container{
+  display: grid;
+  gap: 1em;
+  margin: 2em auto;
+}
+
+/* Restaurant */
+.restaurant-item {
+  display: block;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 2em;
+}
+
+.restaurant-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.restaurant-info {
+  padding: 32px;
+
+}
+
+
+.restaurant-info > .name{
+  font-size: 44px;
+  color: var(--secondary-color);
+}
+
+.restaurant-info.name:hover{
+  color: var(--primary-color);
+  transition: 0.3s ;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+.rating p{
+  margin-left: 10px;
+}
+
+.restaurant-info a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant-info .city {
+  font-size: 20px;
+  color: grey;
+
+}
+
+.restaurant-info .description {
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10; /* number of lines to show */
+  font-size: 20px;
+}
+
+.support_data {
+  margin-top: 1em;
+}
+
+/* Review */
+.review {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+.review-info {
+  padding: 32px;  
+}
+
+.review_list {
+  display: flex;
+  flex-flow: column;
+
+}
+
+.review_user_container{
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review_user {
+  width: 60%;
+  height: 60%;
+
+}
+
+.review_name {
+  margin-top: 0.5em;
+}
+
+
+
+
+/* Like Button */
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+  
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  margin-top: 4em;
+  min-height: 30vh;
+  height: min-content;
+  background-color: var(--tertiary-color);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  color: var(--secondary-color);
+  margin-bottom: 2em;
+}
+
+.socmed {
+  display: flex;
+  align-items: center;
+}
+
+.socmed a{
+  margin: 10px 20px;
+  width: 2em;
+  height: 2em;
+  width: 50px;
+  height: 50px;
+}
+
+
+.instagram {
+  background: url('../public/images/heros/icon/instagram-white.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.instagram:hover{
+  background-size: 80%;
+  transition: .3s;
+}
+
+.facebook {
+  background: url('../public/images/heros/icon/facebook-white.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.facebook:hover{
+  background-size: 80%;
+  transition: .3s;
+}
+
+.linkedin {
+  background: url('../public/images/heros/icon/linkedin-white.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.linkedin:hover{
+  background-size: 80%;
+  transition: .3s;
+}
+
+/* Subscribe Button */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 20px 20px;
+  background-color: var(--primary-color);
+  border: 1px solid #770000;
+  border-radius: 4px;
+ 
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--tertiary-color);
+ 
+  cursor: pointer;
+  transition: .15s ease-in-out;
+}
+ 
+.btn:hover {
+  background-color: #DB0000BB;
+}
+.btn:active {
+  background-color: #DB0000DD;
+}

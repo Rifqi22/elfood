@@ -1,0 +1,127 @@
+@media screen and (max-width: 250px){
+    .review_user_container{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+  @media screen and (max-width: 400px){
+    .socmed {
+        display: flex;
+        flex-flow: column;
+      }
+}
+@media screen and (min-width: 450px){
+    .headline__content {
+        padding: 16px 16px;
+    }
+
+    .headline__title{
+        font-size: 28px;
+    }
+
+    .headline__description{
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (min-width: 500px){
+    .header__menu {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 650px){
+
+    .restaurant-info {
+        padding: 2em;
+    }
+  
+    .restaurant-info .name{
+        font-size: 2em;
+    }
+  
+    .restaurant-info .description{
+        font-size: 1em;
+        line-height: 2em;
+    }
+  }
+
+
+@media screen and (min-width: 700px){
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 10px;
+        
+    }
+    #restaurant-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 10px;
+    }
+    .review_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+}
+
+@media screen and (min-width: 800px){
+    .nav_list{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .nav_list{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .headline{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+  
+    }
+  
+    .headline__content{
+        padding: 16px 32px;
+    }
+  
+    #restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+@media screen and (min-width: 1000px){
+    .headline__content{
+        padding: 16px 32px;
+    }
+    .restaurant-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+    .review_list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+}
+
+@media screen and (min-width: 1200px){
+    .restaurant-list{
+        margin: 0 2em;
+    }
+    #restaurant-list{
+        margin: 0;
+    }
+}
+
